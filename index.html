@@ -9,10 +9,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="sticky top-1 bg-white z-10">
-        <section class="py-1">
+    <header class="sticky top-0 bg-white z-10">
+        <section class="py-3 bg-orange-100">
             <nav class="flex justify-around">
-                <div><button class="btn btn-success bg-[#B4F461] border-none">Blog</button></div>
+                <div><button id="btn-to-blog" class="btn btn-success bg-[#B4F461] border-none">Blog</button></div>
                 <div class="ml-5 lg:ml-0 flex items-center gap-1">
                     <img src="./assets/logo.png" alt=""><p class="font-semibold">Donate Bangladesh</p>
                 </div>
@@ -103,6 +103,24 @@
     <footer>
 
     </footer>
+    <!-- modal start -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="text-center modal-box">
+          <h3 class="text-lg font-bold">Congratulates!</h3>
+          <div class="flex justify-center items-center">
+            <img src="./assets/coin.png" alt="">
+          </div>
+          <p class="py-4">You Have Donated for Humankind</p>
+          <h4>Successfully</h4>
+          <div class="modal-action flex justify-center items-center">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close Confirmation</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+     <!-- modal end -->
     <script src="./js/events.js"></script>
 </body>
 </html>

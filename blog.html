@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Fifth MileStone</title>
+    <!-- cdn of daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- cdn of font awesome -->
+    <script
+      src="https://kit.fontawesome.com/259cd0cdc4.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <header class="bg-orange-100 sticky top-0 z-10 pb-3">
+        <section class="py-3"></section>
+            <nav class="flex justify-around">
+                <div><button id="btn-to-home" class="btn btn-success bg-[#B4F461] border-none">Home</button></div>
+                <div class="ml-5 lg:ml-0 flex items-center gap-1">
+                    <img src="./assets/logo.png" alt=""><p class="font-semibold">Donate Bangladesh</p>
+                </div>
+                <div class="lg: flex items-center gap-1"><img src="./assets/coin.png" alt=""> <p class="font-medium"><span id="availableBDT">5500</span> BDT</p></div>
+            </nav>
+        </section>
+    </header>
+    <main class="mt-11">
+        <h1
+         class="font-extrabold text-4xl">Important FAQ <i class="fa-solid fa-question"></i></h1>
+         <section>
+            <div class="mb-3 collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is a toggle in a computer?</div>
+                <div class="collapse-content">
+                  <p>computers : a setting that can be switched between two different options by performing a single action (such as selecting a menu option or pressing a key)</p>
+                </div>
+            </div>
+            <div class="mb-3 collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">How does Daisy UI work?
+                </div>
+                <div class="collapse-content">
+                  <p>Basically with daisyUI you use a single btn class to make a button and then you can customize it with utility classes. With other component libraries you use copy/paste 100 class names to make a button and then you can customize it by editing them.</p>
+                </div>
+            </div>
+            <div class="mb-3 collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">What does the Tailwind do?</div>
+                <div class="collapse-content">
+                  <p>A tailwind is a wind that blows in the direction of travel of an object, while a headwind blows against the direction of travel. A tailwind increases the object's speed and reduces the time required to reach its destination, while a headwind has the opposite effect.</p>
+                </div>
+            </div>
+            <div class="mb-3 collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title text-xl font-medium">Is React very complex?</div>
+                <div class="collapse-content">
+                  <p>One of the main reasons that developers might find React complex is its syntax. JSX, the syntax used to define components in React, can be confusing for developers who are not familiar with it. </p>
+                </div>
+            </div>
+         </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./js/toHome.js"></script>
+</body>
+</html>
